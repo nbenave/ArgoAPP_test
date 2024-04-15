@@ -20,7 +20,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t benave/dev:argo-app-test:latest .
+      run: docker build -t benave/dev:argo-app-test-latest .
 
     - name: Push Docker image
-      run: docker push benave/dev:argo-app-test:latest
+      run: docker push benave/dev:argo-app-test-latest
